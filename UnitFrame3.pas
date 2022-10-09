@@ -108,16 +108,15 @@ constructor TFrameChoice.Create(AOwner : TComponent);
 begin
   ListOfPeople := TStringList.Create();
   inherited Create(AOwner);
-//  ckb_GestoresPossiveis.Sorted := True;
- // ListOfPeople.Assign(ckb_GestoresPossiveis.Items);
+  ckb_GestoresPossiveis.Sorted := True;
+  ListOfPeople.Assign(ckb_GestoresPossiveis.Items);
 end;
 
 destructor TFrameChoice.Destroy;
 begin
    //cleanup stuff
-
-   inherited Destroy;
    ListOfPeople.Free;
+   inherited Destroy;
 end;
 
 

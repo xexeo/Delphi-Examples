@@ -75,6 +75,7 @@ object FrameChoice: TFrameChoice
     Font.Style = []
     ParentFont = False
     TabOrder = 1
+    OnClick = btn_IncluirGestorClick
   end
   object CheckListBoxEscolhidos: TCheckListBox
     Left = 452
@@ -98,12 +99,14 @@ object FrameChoice: TFrameChoice
     Font.Style = []
     ParentFont = False
     TabOrder = 3
+    OnClick = brn_ExcluirGestorClick
   end
   object edit_FilterPossiveis: TEdit
-    Left = 60
-    Top = 320
+    Left = 58
+    Top = 316
     Width = 260
     Height = 21
     TabOrder = 4
+    OnChange = edit_FilterPossiveisChange
   end
 end

@@ -10,16 +10,16 @@ type
   TFrameChoice = class(TFrame)
     lbl_PossiveisGestores: TLabel;
     ckb_GestoresPossiveis: TCheckListBox;
-    btn_IncluirGestor: TButton;
+    btn_IncludeName: TButton;
     CheckListBoxEscolhidos: TCheckListBox;
-    brn_ExcluirGestor: TButton;
+    brn_ExcludeName: TButton;
     edit_FilterPossiveis: TEdit;
     lbl_Filtro: TLabel;
     lbl_GestoresEscolhidos: TLabel;
 
-    procedure btn_IncluirGestorClick(Sender: TObject);
+    procedure btn_IncludeNameClick(Sender: TObject);
     procedure edit_FilterPossiveisChange(Sender: TObject);
-    procedure brn_ExcluirGestorClick(Sender: TObject);
+    procedure brn_ExcludeNameClick(Sender: TObject);
 
   private
     { Private declarations }
@@ -35,7 +35,7 @@ implementation
 {$R *.dfm}
 // GESTORES
 
-procedure TFrameChoice.btn_IncluirGestorClick(Sender: TObject);
+procedure TFrameChoice.btn_IncludeNameClick(Sender: TObject);
 var
   i: Integer;
 begin
@@ -80,7 +80,7 @@ begin
   ckb_GestoresPossiveis.Items.EndUpdate;
 end;
 
-procedure TFrameChoice.brn_ExcluirGestorClick(Sender: TObject);
+procedure TFrameChoice.brn_ExcludeNameClick(Sender: TObject);
 var
   i: Integer;
 begin

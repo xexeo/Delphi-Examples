@@ -8,8 +8,8 @@ object Frame1: TFrame1
   object Label1: TLabel
     Left = 432
     Top = 200
-    Width = 107
-    Height = 121
+    Width = 35
+    Height = 77
     Cursor = crNo
     Alignment = taCenter
     Caption = '1'
@@ -27,15 +27,15 @@ object Frame1: TFrame1
     Width = 217
     Height = 161
     Cursor = crHandPoint
-    Caption = 'Escolha Um Apenas'
+    Caption = 'Choose one...'
     ItemIndex = 0
     Items.Strings = (
-      'Um'
-      'Dois'
-      'Tr'#234's'
-      'Quatro'
-      'Cinco'
-      'Seis')
+      'One'
+      'Two'
+      'Three'
+      'Four'
+      'Five'#11
+      'Six')
     TabOrder = 0
     OnClick = RadioGroup1Click
   end

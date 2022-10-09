@@ -42,12 +42,13 @@ object Form1: TForm1
         Font.Style = [fsBold]
         ParentFont = False
         Layout = tlCenter
-        ExplicitTop = 24
+        ExplicitWidth = 768
+        ExplicitHeight = 45
       end
       object Label2: TLabel
         Left = 144
         Top = 341
-        Width = 465
+        Width = 393
         Height = 39
         Align = alCustom
         Alignment = taCenter

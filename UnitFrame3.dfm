@@ -7,9 +7,9 @@ object FrameChoice: TFrameChoice
   object lbl_PossiveisGestores: TLabel
     Left = 112
     Top = 10
-    Width = 106
+    Width = 87
     Height = 13
-    Caption = 'Poss'#237'veis Gestores'
+    Caption = 'Possible Names'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -22,7 +22,7 @@ object FrameChoice: TFrameChoice
     Top = 320
     Width = 32
     Height = 13
-    Caption = 'Filtro:'
+    Caption = 'Filter:'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -34,9 +34,9 @@ object FrameChoice: TFrameChoice
   object lbl_GestoresEscolhidos: TLabel
     Left = 559
     Top = 11
-    Width = 112
+    Width = 82
     Height = 13
-    Caption = 'Gestores Escolhidos'
+    Caption = 'Chosen Names'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -62,12 +62,12 @@ object FrameChoice: TFrameChoice
       'Helena Harmona (Gerente de Vendas)')
     TabOrder = 0
   end
-  object btn_IncluirGestor: TButton
+  object btn_IncludeName: TButton
     Left = 340
     Top = 70
     Width = 100
     Height = 25
-    Caption = 'Incluir Gestor'
+    Caption = 'Include Name'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -75,7 +75,7 @@ object FrameChoice: TFrameChoice
     Font.Style = []
     ParentFont = False
     TabOrder = 1
-    OnClick = btn_IncluirGestorClick
+    OnClick = btn_IncludeNameClick
   end
   object CheckListBoxEscolhidos: TCheckListBox
     Left = 452
@@ -86,12 +86,12 @@ object FrameChoice: TFrameChoice
     ItemHeight = 13
     TabOrder = 2
   end
-  object brn_ExcluirGestor: TButton
+  object brn_ExcludeName: TButton
     Left = 340
     Top = 240
     Width = 100
     Height = 25
-    Caption = 'Excluir Gestor'
+    Caption = 'Exclude Name'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -99,7 +99,7 @@ object FrameChoice: TFrameChoice
     Font.Style = []
     ParentFont = False
     TabOrder = 3
-    OnClick = brn_ExcluirGestorClick
+    OnClick = brn_ExcludeNameClick
   end
   object edit_FilterPossiveis: TEdit
     Left = 58

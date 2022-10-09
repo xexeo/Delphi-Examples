@@ -21,7 +21,7 @@ object Form1: TForm1
     Top = 0
     Width = 800
     Height = 560
-    ActivePage = ts_Tab2Frame2
+    ActivePage = ts_Tab3Frame3
     TabOrder = 0
     object ts_Tab1Frame1: TTabSheet
       Caption = 'Using Radio Buttons'
@@ -29,6 +29,10 @@ object Form1: TForm1
     object ts_Tab2Frame2: TTabSheet
       Caption = 'Using Colors'
       ImageIndex = 1
+    end
+    object ts_Tab3Frame3: TTabSheet
+      Caption = 'A sorted choice'
+      ImageIndex = 2
     end
   end
 end

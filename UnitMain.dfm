@@ -22,9 +22,9 @@ object Form1: TForm1
     Top = 0
     Width = 800
     Height = 560
-    ActivePage = TabSheet2
+    ActivePage = ts_SortedChoice
     TabOrder = 0
-    object TabSheet2: TTabSheet
+    object ts_About: TTabSheet
       Caption = 'About...'
       ImageIndex = 4
       object Label1: TLabel
@@ -1091,18 +1091,18 @@ object Form1: TForm1
         Stretch = True
       end
     end
-    object ts_Tab1Frame1: TTabSheet
+    object ts_RadioButtos: TTabSheet
       Caption = 'Using Radio Buttons'
     end
-    object ts_Tab2Frame2: TTabSheet
+    object ts_UsingColors: TTabSheet
       Caption = 'Using Colors'
       ImageIndex = 1
     end
-    object TabSheet1: TTabSheet
+    object ts_GridWithDropDown: TTabSheet
       Caption = 'Grid with dropboxlist'
       ImageIndex = 3
     end
-    object ts_Tab3Frame3: TTabSheet
+    object ts_SortedChoice: TTabSheet
       Caption = 'A sorted choice'
       ImageIndex = 2
     end

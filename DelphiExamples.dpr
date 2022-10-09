@@ -3,10 +3,10 @@ program DelphiExamples;
 uses
   Vcl.Forms,
   UnitMain in 'UnitMain.pas' {Form1},
-  UnitFrame1 in 'UnitFrame1.pas' {Frame1: TFrame},
-  UnitFrame2 in 'UnitFrame2.pas' {Frame2: TFrame},
-  UnitFrame3 in 'UnitFrame3.pas' {FrameChoice: TFrame},
-  UnitFrame4 in 'UnitFrame4.pas' {Frame3: TFrame};
+  RadioControl_Unit in 'RadioControl_Unit.pas' {FrameRadioControl: TFrame},
+  ColorPicker_Unit in 'ColorPicker_Unit.pas' {FrameColorPicker: TFrame},
+  SelectNames_Unit in 'SelectNames_Unit.pas' {FrameChoice: TFrame},
+  GridDropBox_Unit in 'GridDropBox_Unit.pas' {FrameGridDropDown: TFrame};
 
 {$R *.res}
 

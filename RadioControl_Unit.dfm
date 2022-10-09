@@ -1,11 +1,11 @@
-object Frame1: TFrame1
+object FrameRadioControl: TFrameRadioControl
   Left = 0
   Top = 0
   Width = 800
   Height = 540
   Cursor = crNo
   TabOrder = 0
-  object Label1: TLabel
+  object TheBigNumber: TLabel
     Left = 432
     Top = 200
     Width = 35
@@ -34,7 +34,7 @@ object Frame1: TFrame1
       'Two'
       'Three'
       'Four'
-      'Five'#11
+      'Five'
       'Six')
     TabOrder = 0
     OnClick = RadioGroup1Click

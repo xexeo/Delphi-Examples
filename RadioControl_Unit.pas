@@ -1,4 +1,4 @@
-unit UnitFrame1;
+unit RadioControl_Unit;
 
 interface
 
@@ -8,9 +8,9 @@ uses
   Vcl.StdCtrls, Vcl.ExtCtrls;
 
 type
-  TFrame1 = class(TFrame)
+  TFrameRadioControl = class(TFrame)
     RadioGroup1: TRadioGroup;
-    Label1: TLabel;
+    TheBigNumber: TLabel;
     procedure RadioGroup1Click(Sender: TObject);
   private
     { Private declarations }
@@ -22,9 +22,9 @@ implementation
 
 {$R *.dfm}
 
-procedure TFrame1.RadioGroup1Click(Sender: TObject);
+procedure TFrameRadioControl.RadioGroup1Click(Sender: TObject);
 begin
-  Label1.Caption := IntToStr(RadioGroup1.itemindex+1);
+  TheBigNumber.Caption := IntToStr(RadioGroup1.itemindex+1);
 end;
 
 end.

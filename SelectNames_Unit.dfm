@@ -4,7 +4,7 @@ object FrameChoice: TFrameChoice
   Width = 752
   Height = 541
   TabOrder = 0
-  object lbl_PossiveisGestores: TLabel
+  object lbl_PossibleNames: TLabel
     Left = 112
     Top = 10
     Width = 87
@@ -17,7 +17,7 @@ object FrameChoice: TFrameChoice
     Font.Style = [fsBold]
     ParentFont = False
   end
-  object lbl_Filtro: TLabel
+  object lbl_Filter: TLabel
     Left = 20
     Top = 320
     Width = 32
@@ -31,7 +31,7 @@ object FrameChoice: TFrameChoice
     ParentFont = False
     Layout = tlCenter
   end
-  object lbl_GestoresEscolhidos: TLabel
+  object lbl_Chosen: TLabel
     Left = 559
     Top = 11
     Width = 82
@@ -44,7 +44,7 @@ object FrameChoice: TFrameChoice
     Font.Style = [fsBold]
     ParentFont = False
   end
-  object ckb_GestoresPossiveis: TCheckListBox
+  object chkb_Possible: TCheckListBox
     Left = 20
     Top = 30
     Width = 300
@@ -77,7 +77,7 @@ object FrameChoice: TFrameChoice
     TabOrder = 1
     OnClick = btn_IncludeNameClick
   end
-  object CheckListBoxEscolhidos: TCheckListBox
+  object chkb_Chosen: TCheckListBox
     Left = 452
     Top = 30
     Width = 300
@@ -101,12 +101,12 @@ object FrameChoice: TFrameChoice
     TabOrder = 3
     OnClick = brn_ExcludeNameClick
   end
-  object edit_FilterPossiveis: TEdit
+  object edit_FilterPossible: TEdit
     Left = 58
     Top = 316
     Width = 260
     Height = 21
     TabOrder = 4
-    OnChange = edit_FilterPossiveisChange
+    OnChange = edit_FilterPossibleChange
   end
 end

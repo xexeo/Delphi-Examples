@@ -1,17 +1,16 @@
-object Frame3: TFrame3
+object FrameGridDropDown: TFrameGridDropDown
   Left = 0
   Top = 0
   Width = 690
   Height = 485
   TabOrder = 0
   object StringGridPIs: TStringGrid
-    Left = 71
+    Left = 70
     Top = 56
     Width = 505
     Height = 257
     ColCount = 4
     DefaultColWidth = 120
-    FixedCols = 0
     RowCount = 25
     Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goFixedColDefAlign, goFixedRowDefAlign]
     TabOrder = 0
@@ -28,8 +27,8 @@ object Frame3: TFrame3
     Visible = False
     OnChange = cb1Change
     Items.Strings = (
-      'Baixo'
-      'M'#233'dio'
-      'Alto')
+      'Yes'
+      'No'
+      'I don'#180't know')
   end
 end

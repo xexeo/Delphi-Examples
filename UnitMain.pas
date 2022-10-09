@@ -7,31 +7,35 @@ uses
   System.SysUtils, System.Variants, System.Classes,
   Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs,
   Vcl.ExtCtrls, Vcl.StdCtrls, Vcl.ComCtrls,
-  UnitFrame1, UnitFrame2, UnitFrame3, UnitFrame4, Vcl.Imaging.pngimage;
+  ColorPicker_Unit, SelectNames_Unit, GridDropBox_Unit, RadioControl_Unit,
+  Vcl.Imaging.pngimage;
 
 type
   TForm1 = class(TForm)
     PageControl1: TPageControl;
-    ts_Tab1Frame1: TTabSheet;
-    ts_Tab2Frame2: TTabSheet;
-    ts_Tab3Frame3: TTabSheet;
-    bt_End: TButton;
-    TabSheet1: TTabSheet;
-    TabSheet2: TTabSheet;
+    // these tab sheets will get their own frame
+    ts_RadioButtos: TTabSheet;
+    ts_UsingColors: TTabSheet;
+    ts_SortedChoice: TTabSheet;
+    ts_GridWithDropDown: TTabSheet;
+    // Simple Tab sheet for about, don´t need a frame
+    ts_About: TTabSheet;
     Label1: TLabel;
     Label2: TLabel;
     Label3: TLabel;
     Image1: TImage;
+    // Just an end button
+    bt_End: TButton;
     procedure FormCreate(Sender: TObject);
     procedure bt_EndClick(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
 
   private
     { Private declarations }
-    frame1 : TFrame1;
-    frame2 : TFrame2;
+    frame1 : TFrameRadioControl;
+    frame2 : TFrameColorPicker;
     frame3 : TFrameChoice;
-    frame4 : TFrame3;
+    frame4 : TFrameGridDropDown;
   public
     { Public declarations }
   end;
@@ -50,17 +54,17 @@ end;
 
 procedure TForm1.FormCreate(Sender: TObject);
 begin
-  frame1 := TFrame1.Create(self);
+  frame1 := TFrameRadioControl.Create(self);
   frame1.Parent := PageControl1.Pages[1];
 
-  frame2 := TFrame2.Create(self);
+  frame2 := TFrameColorPicker.Create(self);
   frame2.Parent := PageControl1.Pages[2];
 
   frame3 := TFrameChoice.Create(self);
-  frame3.Parent := PageControl1.Pages[3];
+  frame3.Parent := PageControl1.Pages[4];
 
-  frame4 := TFrame3.Create(self);
-  frame4.Parent := PageControl1.Pages[4];
+  frame4 := TFrameGridDropDown.Create(self);
+  frame4.Parent := PageControl1.Pages[3];
 
 end;
 
@@ -75,6 +79,7 @@ begin
   frame1.Free;
   frame2.Free;
   frame3.Free;
+  frame4.Free;
 end;
 
 

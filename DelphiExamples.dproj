@@ -105,23 +105,23 @@
             <Form>Form1</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="UnitFrame1.pas">
-            <Form>Frame1</Form>
+        <DCCReference Include="RadioControl_Unit.pas">
+            <Form>FrameRadioControl</Form>
             <FormType>dfm</FormType>
             <DesignClass>TFrame</DesignClass>
         </DCCReference>
-        <DCCReference Include="UnitFrame2.pas">
-            <Form>Frame2</Form>
+        <DCCReference Include="ColorPicker_Unit.pas">
+            <Form>FrameColorPicker</Form>
             <FormType>dfm</FormType>
             <DesignClass>TFrame</DesignClass>
         </DCCReference>
-        <DCCReference Include="UnitFrame3.pas">
+        <DCCReference Include="SelectNames_Unit.pas">
             <Form>FrameChoice</Form>
             <FormType>dfm</FormType>
             <DesignClass>TFrame</DesignClass>
         </DCCReference>
-        <DCCReference Include="UnitFrame4.pas">
-            <Form>Frame3</Form>
+        <DCCReference Include="GridDropBox_Unit.pas">
+            <Form>FrameGridDropDown</Form>
             <FormType>dfm</FormType>
             <DesignClass>TFrame</DesignClass>
         </DCCReference>

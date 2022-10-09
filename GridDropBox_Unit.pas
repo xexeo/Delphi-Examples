@@ -1,4 +1,4 @@
-unit UnitFrame4;
+unit GridDropBox_Unit;
 
 {
 
@@ -21,7 +21,7 @@ uses
   Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Grids;
 
 type
-  TFrame3 = class(TFrame)
+  TFrameGridDropDown = class(TFrame)
     StringGridPIs: TStringGrid;
     ComboBox1: TComboBox;
 
@@ -47,7 +47,7 @@ implementation
 // GRID
 
 
-procedure TFrame3.sg1SelectCell(Sender: TObject; ACol,
+procedure TFrameGridDropDown.sg1SelectCell(Sender: TObject; ACol,
   ARow: Integer; var CanSelect: Boolean);
 var
   R: TRect;
@@ -66,7 +66,7 @@ begin
 end;
 
 
-procedure TFrame3.cb1Change(Sender: TObject);
+procedure TFrameGridDropDown.cb1Change(Sender: TObject);
 begin
 {SG1.Cells[cb1.Tag mod 65536,cb1.tag div 65536]:=
   cb1.Items[cb1.itemindex];}
@@ -76,12 +76,12 @@ StringGridPIs.Cells[StringGridPIs.Col, StringGridPIs.Row]:=
 end;
 
 
-procedure TFrame3.cb1Exit(Sender: TObject);
+procedure TFrameGridDropDown.cb1Exit(Sender: TObject);
 begin
 ComboBox1.visible:=false;
 end;
 
-procedure TFrame3.sg1TopLeftChanged(Sender: TObject);
+procedure TFrameGridDropDown.sg1TopLeftChanged(Sender: TObject);
 var
   R: TRect;
 begin
@@ -90,36 +90,36 @@ begin
 end;
 
 
-procedure TFrame3.ts_AvaliarPIsShow(Sender: TObject);
+procedure TFrameGridDropDown.ts_AvaliarPIsShow(Sender: TObject);
 begin
   FillStrinGridPIs();
 end;
 
 // STRING GRID de partes interessadas
 
-procedure TFrame3.FillStrinGridPIs;
+procedure TFrameGridDropDown.FillStrinGridPIs;
 var
-  quantos : Integer;
+  howmany : Integer;
   i : Integer;
 begin
-  quantos :=  10;
-  StringGridPIs.RowCount := quantos+1;
-  StringGridPIs.Cells[0,0] := 'Partes Interessadas';
-  StringGridPIs.Cells[1,0] := 'Poder';
-  StringGridPIs.Cells[2,0] := 'Urgência';
-  StringGridPIs.Cells[3,0] := 'Legitimidade';
-  for i := 1 to quantos do
+  howmany :=  100;
+  StringGridPIs.RowCount := howmany+1;
+  StringGridPIs.Cells[0,0] := 'Numbers';
+  StringGridPIs.Cells[1,0] := 'Prime';
+  StringGridPIs.Cells[2,0] := 'Odd';
+  StringGridPIs.Cells[3,0] := 'Square';
+  for i := 1 to howmany do
     StringGridPIs.Cells[0,i] := IntToStr(i);
 end;
 
 
-Constructor TFrame3.Create(AOwner : TComponent);
+Constructor TFrameGridDropDown.Create(AOwner : TComponent);
 begin
   inherited Create(AOwner);
   FillStrinGridPIs;
 end;
 
-destructor TFrame3.Destroy;
+destructor TFrameGridDropDown.Destroy;
 begin
     inherited Destroy;
 end;

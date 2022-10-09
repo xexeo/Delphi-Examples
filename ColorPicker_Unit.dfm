@@ -1,4 +1,4 @@
-object Frame2: TFrame2
+object FrameColorPicker: TFrameColorPicker
   Left = 0
   Top = 0
   Width = 410
@@ -13,7 +13,7 @@ object Frame2: TFrame2
     Pen.Color = clYellow
     Pen.Width = 4
   end
-  object ColorBox1: TColorBox
+  object BrushColorBox: TColorBox
     Left = 120
     Top = 56
     Width = 145
@@ -22,9 +22,9 @@ object Frame2: TFrame2
     NoneColorColor = clFuchsia
     Selected = clFuchsia
     TabOrder = 0
-    OnChange = ColorBox1Change
+    OnChange = BrushColorBoxChange
   end
-  object ColorBox2: TColorBox
+  object PenColorBox: TColorBox
     Left = 120
     Top = 104
     Width = 145
@@ -33,6 +33,6 @@ object Frame2: TFrame2
     NoneColorColor = clYellow
     Selected = clYellow
     TabOrder = 1
-    OnChange = ColorBox2Change
+    OnChange = PenColorBoxChange
   end
 end
